@@ -1,0 +1,137 @@
+.page {
+  position: relative;
+  min-height: 100dvh;
+}
+
+/* Faint, tone-on-tone striped wallpaper so the paintings keep the attention. */
+.wallpaper {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 2.5rem;
+  max-width: 76rem;
+  margin: 0 auto;
+  /* right padding leaves room for the floating About button */
+  padding: 1.5rem 9rem 1rem clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--step-2);
+  line-height: 1.1;
+  font-variation-settings: 'SOFT' 100, 'WONK' 1, 'opsz' 72;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.filter {
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  font-size: var(--step--1);
+  color: var(--ink);
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.filter:hover {
+  background: rgba(35, 44, 90, 0.08);
+}
+
+.filter[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--plaque);
+}
+
+.wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: clamp(3rem, 6vw, 5rem) clamp(2rem, 4vw, 4rem);
+  align-items: start;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.5rem) clamp(1.25rem, 4vw, 2.5rem) 6rem;
+}
+
+.frame {
+  display: block;
+  width: 100%;
+  cursor: zoom-in;
+  border-radius: 2px;
+}
+
+/* Every object in the paintings casts a flat, hard shadow. So do the paintings. */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 10px 10px 0 var(--painted-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.frame:hover .image {
+  transform: translate(-3px, -3px);
+  box-shadow: 14px 14px 0 var(--painted-shadow);
+}
+
+.label {
+  display: grid;
+  gap: 0.15rem;
+  margin-top: 1.4rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--step-1);
+  line-height: 1.25;
+}
+
+.meta {
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+}
+
+.tags {
+  margin-top: 0.45rem;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 2rem clamp(1.25rem, 4vw, 2.5rem) 3rem;
+  border-top: 1.5px solid var(--periwinkle);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.footer a {
+  color: var(--ink);
+  text-decoration-color: var(--tangerine);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-right: clamp(1.25rem, 4vw, 2.5rem);
+    padding-top: 5rem;
+  }
+}

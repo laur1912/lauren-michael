@@ -1,0 +1,107 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgba(35, 44, 90, 0.55);
+  animation: fade 0.2s ease;
+}
+
+.plaque {
+  position: relative;
+  width: min(32rem, 100%);
+  max-height: calc(100dvh - 2.5rem);
+  overflow-y: auto;
+  padding: 2.5rem 2.25rem 2.25rem;
+  background: var(--plaque);
+  color: var(--ink);
+  border-radius: 3px;
+  box-shadow: 10px 10px 0 var(--ink);
+  animation: lift 0.25s ease;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1.1rem;
+  font-size: var(--step--1);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  font-weight: 400;
+  line-height: 1.1;
+  font-variation-settings: 'SOFT' 100, 'WONK' 1, 'opsz' 96;
+  padding-right: 3rem;
+}
+
+.medium {
+  margin-top: 0.4rem;
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+}
+
+.body {
+  margin-top: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.contact {
+  margin: 1.75rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1.5px solid var(--periwinkle);
+  display: grid;
+  gap: 0.6rem;
+}
+
+.contact div {
+  display: grid;
+  gap: 0.1rem;
+}
+
+@media (min-width: 480px) {
+  .contact div {
+    grid-template-columns: 6.5rem 1fr;
+    gap: 0.75rem;
+  }
+}
+
+.contact dt {
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+  padding-top: 0.15rem;
+}
+
+.contact dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact a {
+  text-decoration-color: var(--tangerine);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes lift {
+  from {
+    opacity: 0;
+    transform: translate(6px, 10px);
+    box-shadow: 2px 2px 0 var(--ink);
+  }
+}

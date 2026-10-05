@@ -1,0 +1,24 @@
+.eye {
+  width: 1.9rem;
+  height: auto;
+  display: block;
+}
+
+.closed,
+.open {
+  transition: opacity 0.18s ease;
+}
+
+.open {
+  opacity: 0;
+}
+
+:global(.eye-trigger:hover) .closed,
+:global(.eye-trigger:focus-visible) .closed {
+  opacity: 0;
+}
+
+:global(.eye-trigger:hover) .open,
+:global(.eye-trigger:focus-visible) .open {
+  opacity: 1;
+}

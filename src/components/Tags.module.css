@@ -1,0 +1,30 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.tag::before {
+  content: '';
+  flex: none;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--ink-soft);
+}
+
+.thrifted::before {
+  background: var(--tangerine);
+}
+
+.reading::before {
+  background: var(--sage);
+}
