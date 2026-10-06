@@ -107,12 +107,12 @@ export const paintings = [
     details: [],
     alt: 'A mint green rotary phone with its receiver off the hook on a burgundy and pink checkerboard, beside a slice of cherry lattice pie and a cigarette resting in a glass ashtray.',
   },
-  // TODO: real titles, sizes and medium for the Women Reading series.
+  // TODO: real titles for the Women Reading series, and confirm the medium.
   {
     slug: 'reading-magazine',
     title: 'Reading (magazine)',
     medium: 'Oil on canvas',
-    size: '',
+    size: '20 × 24 in',
     tags: [TAGS.reading],
     image: readingMagazine,
     details: [],
@@ -122,7 +122,7 @@ export const paintings = [
     slug: 'reading-newspaper',
     title: 'Reading (newspaper)',
     medium: 'Oil on canvas',
-    size: '',
+    size: '20 × 24 in',
     tags: [TAGS.reading],
     image: readingNewspaper,
     details: [],
@@ -132,7 +132,7 @@ export const paintings = [
     slug: 'reading-book',
     title: 'Reading (book)',
     medium: 'Oil on canvas',
-    size: '',
+    size: '24 × 18 in',
     tags: [TAGS.reading],
     image: readingBook,
     details: [],
