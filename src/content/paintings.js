@@ -12,6 +12,8 @@ import girlStuff from './paintings/girl-stuff/main.jpg';
 import readingMagazine from './paintings/reading-magazine/main.jpg';
 import readingNewspaper from './paintings/reading-newspaper/main.jpg';
 import readingBook from './paintings/reading-book/main.jpg';
+import cuppa from './paintings/cuppa/main.jpg';
+import year1959 from './paintings/1959/main.jpg';
 
 // Example of adding close-ups once you have them:
 // import rechargeDetail1 from './paintings/recharge/detail-1.jpg';
@@ -21,6 +23,7 @@ import readingBook from './paintings/reading-book/main.jpg';
 export const TAGS = {
   thrifted: 'Thrifted Frame Paintings',
   reading: 'Women Reading',
+  small: 'Small Pieces',
 };
 
 export const paintings = [
@@ -83,6 +86,26 @@ export const paintings = [
     image: girlStuff,
     details: [],
     alt: 'A woman rests her chin on folded arms beside a wine bottle while a black cat looms over her against periwinkle and cream stripes.',
+  },
+  {
+    slug: 'cuppa',
+    title: 'Cuppa',
+    medium: 'Oil on thrifted frame',
+    size: '9 × 11 in',
+    tags: [TAGS.thrifted, TAGS.small],
+    image: cuppa,
+    details: [],
+    alt: 'A lavender teacup with a slice of lemon on a navy and cream checkerboard, its steam rising in blocks of orange and rust over the frame’s molding.',
+  },
+  {
+    slug: '1959',
+    title: '1959',
+    medium: 'Oil on thrifted frame',
+    size: '10 × 12 in',
+    tags: [TAGS.thrifted, TAGS.small],
+    image: year1959,
+    details: [],
+    alt: 'A mint green rotary phone with its receiver off the hook on a burgundy and pink checkerboard, beside a slice of cherry lattice pie and a cigarette resting in a glass ashtray.',
   },
   // TODO: real titles, sizes and medium for the Women Reading series.
   {

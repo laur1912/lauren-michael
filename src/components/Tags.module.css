@@ -28,3 +28,7 @@
 .reading::before {
   background: var(--sage);
 }
+
+.small::before {
+  background: var(--lilac);
+}
