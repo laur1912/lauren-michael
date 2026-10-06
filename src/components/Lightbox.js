@@ -55,6 +55,7 @@ function Viewer({ painting }) {
           sizes="(max-width: 900px) 200vw, 140vw"
           className={styles.photo}
           style={{
+            '--ratio': views[viewIndex].width / views[viewIndex].height,
             transformOrigin: `${origin.x}% ${origin.y}%`,
             transform: zoomed ? `scale(${ZOOM})` : 'none',
           }}
