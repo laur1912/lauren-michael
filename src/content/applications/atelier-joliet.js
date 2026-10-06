@@ -8,7 +8,8 @@ export const application = {
   venue: 'Atelier Joliet',
   call: 'Group show, Exploratory Motion',
   bio: [
-    'I’m Lauren Michael Parker, a Chicagoland-based painter whose figurative work turns feelings like loneliness and longing into color and patterns, mostly in oils. I’ve developed my voice through years of practice alongside workshops, classes, and courses, less “self-taught” than constantly taught by community and repetition. Much of my recent work is painted directly onto thrifted frames, with the pattern carried over the molding so the frame becomes part of the painting. In Recharge #2, a woman dances with her back to the viewer while a sheer pink wrap follows the turn of her body. I painted the fabric as a translucent layer over the checkerboard floor, so the pattern shows through it and bends with her movement. Around her, stripes and checkerboards meet at different angles, which keeps the whole surface moving.',
+    'I’m Lauren Michael Parker, a Chicagoland-based painter whose figurative work turns feelings like loneliness and longing into color and patterns. I’ve learned through years of workshops and classes, less “self-taught” than constantly taught by community and repetition. Most of my recent work is painted in oil directly onto thrifted frames, so the frame becomes part of the painting.',
+    'In Recharge #2, a sheer pink wrap follows a woman as she dances. I painted the fabric as a translucent layer, so the checkerboard floor shows through and bends with her movement.',
   ],
   works: [
     {
