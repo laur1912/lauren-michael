@@ -5,11 +5,10 @@ export const site = {
   name: 'Lauren Michael Parker',
   medium: 'Painter based in Chicagoland',
   // One line for the entrance plaque.
-  statement:
-    'Emotionally driven figurative paintings that translate feelings like loneliness, boredom and longing into color.',
+  statement: 'Figurative paintings that turn feelings like loneliness and longing into color.',
   // Shown in the About window, one string per paragraph.
   about: [
-    'I’m Lauren, a Chicagoland-based painter working on emotionally driven figurative work that translates feelings like loneliness, boredom and longing into color. Working primarily in oils (and occasionally mixed media), I’ve developed my voice through years of practice alongside workshops, classes and courses—less “self-taught” than constantly taught by community and repetition. I’m interested in how emotion shows up in color, lighting and the tension between a figure and the objects surrounding them—what we reach for, what we use as props, and what still doesn’t fill the space.',
+    'I’m Lauren, a Chicagoland-based painter whose figurative work turns feelings like loneliness and longing into color, mostly in oils. Most of what I know I learned in workshops and classes, from other painters and from a lot of repetition. I’m interested in the objects people surround themselves with, and in what still doesn’t fill the space.',
   ],
   email: 'lauren.rabin2@gmail.com',
   instagram: { handle: '@artsandsnax', url: 'https://www.instagram.com/artsandsnax/' },

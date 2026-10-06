@@ -10,7 +10,7 @@ export const application = {
   call: 'Small works exhibition',
   // Bio for this submission only. The main site keeps its own About text.
   bio: [
-    'I’m Lauren, a Chicagoland-based painter whose figurative work translates feelings like loneliness, boredom and longing into color. Working primarily in oils (and occasionally mixed media), I’ve developed my voice through years of practice alongside workshops, classes and courses—less “self-taught” than constantly taught by community and repetition. For these small works, I left the figures out of the frame and let the objects carry the feeling—what we reach for, what we use as props, and what still doesn’t fill the space.',
+    'I’m Lauren, a Chicagoland-based painter, and I usually paint people, using color to get at feelings like loneliness and longing. For these small works I left the figures out of the frame and painted what they left behind: a cup of tea still steaming, and a phone off the hook beside a cigarette burning down. Both are oil on thrifted frames, so each piece is one of a kind.',
   ],
   works: [
     {
@@ -24,7 +24,7 @@ export const application = {
       tags: [TAGS.thrifted],
       image: cuppa,
       details: [],
-      alt: 'A lavender teacup with a slice of lemon on a navy and cream checkerboard, its steam rising in blocks of orange and rust, painted across the frame’s molding.',
+      alt: 'A lavender teacup with a slice of lemon on a navy and cream checkerboard, its steam rising in blocks of orange and rust over the frame’s molding.',
     },
     {
       slug: '1959',
