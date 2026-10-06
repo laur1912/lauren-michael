@@ -1,0 +1,132 @@
+.page {
+  position: relative;
+  min-height: 100dvh;
+  padding: clamp(1.25rem, 5vw, 4rem) clamp(1.25rem, 4vw, 2.5rem) 5rem;
+}
+
+.wallpaper {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.plaque {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: var(--plaque);
+  border-radius: 3px;
+  box-shadow: 10px 10px 0 var(--ink);
+}
+
+.for {
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+}
+
+.name {
+  margin-top: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(var(--step-3), 5vw, var(--step-5));
+  line-height: 1.02;
+  font-variation-settings: 'SOFT' 100, 'WONK' 1, 'opsz' 144;
+}
+
+.medium {
+  margin-top: 0.5rem;
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+}
+
+.bio {
+  margin-top: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  max-width: 62ch;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1.5px solid var(--periwinkle);
+  font-size: var(--step--1);
+}
+
+.links a {
+  text-decoration-color: var(--tangerine);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.links .gallery {
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--plaque);
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--tangerine);
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 4rem clamp(2rem, 5vw, 5rem);
+  align-items: start;
+  max-width: 64rem;
+  margin: clamp(3rem, 7vw, 5rem) auto 0;
+}
+
+.frame {
+  display: block;
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 10px 10px 0 var(--painted-shadow);
+}
+
+.label {
+  display: grid;
+  gap: 0.1rem;
+  margin-top: 1.5rem;
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+}
+
+.entry {
+  margin-bottom: 0.2rem;
+}
+
+.title {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--step-2);
+  line-height: 1.2;
+}
+
+.price {
+  margin-top: 0.2rem;
+  color: var(--ink);
+  font-size: var(--step-0);
+}
+
+@media (max-width: 520px) {
+  .links .gallery {
+    margin-left: 0;
+  }
+}
