@@ -27,7 +27,7 @@ export default function Submission({ application }) {
 
       <header className={styles.plaque}>
         <p className={styles.for}>
-          Submission to {application.venue}, {application.call.toLowerCase()}
+          Submission to {application.venue}: {application.call}
         </p>
         <h1 className={styles.name}>{site.name}</h1>
         <p className={styles.medium}>{site.medium}</p>
@@ -70,12 +70,12 @@ export default function Submission({ application }) {
                   />
                 </button>
                 <figcaption className={styles.label}>
-                  <span className={styles.entry}>Entry {w.entry}</span>
+                  {works.length > 1 && <span className={styles.entry}>Entry {w.entry}</span>}
                   <span className={styles.title}>{w.title}</span>
                   <span>{site.name}</span>
                   <span>{w.medium}</span>
                   <span>{w.size}, including frame</span>
-                  <span>{w.year}</span>
+                  {w.year && <span>{w.year}</span>}
                   <span className={styles.price}>{w.price}</span>
                 </figcaption>
               </figure>
@@ -86,7 +86,7 @@ export default function Submission({ application }) {
 
       {open !== -1 && (
         <Lightbox
-          painting={{ ...works[open], size: [works[open].size, works[open].year, works[open].price].join(', ') }}
+          painting={{ ...works[open], size: [works[open].size, works[open].year, works[open].price].filter(Boolean).join(', ') }}
           position={open + 1}
           total={works.length}
           onPrev={() => step(-1)}
