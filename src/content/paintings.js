@@ -9,8 +9,6 @@ import goHome from './paintings/i-just-want-to-go-home/main.jpg';
 import daisyJ from './paintings/daisy-j/main.jpg';
 import beenADay from './paintings/its-been-a-day/main.jpg';
 import girlStuff from './paintings/girl-stuff/main.jpg';
-import curated from './paintings/curated/main.jpg';
-import girlStuff2 from './paintings/girl-stuff-2/main.jpg';
 import readingMagazine from './paintings/reading-magazine/main.jpg';
 import readingNewspaper from './paintings/reading-newspaper/main.jpg';
 import readingBook from './paintings/reading-book/main.jpg';
@@ -85,26 +83,6 @@ export const paintings = [
     image: girlStuff,
     details: [],
     alt: 'A woman rests her chin on folded arms beside a wine bottle while a black cat looms over her against periwinkle and cream stripes.',
-  },
-  {
-    slug: 'curated',
-    title: 'Curated',
-    medium: 'Oil on thrifted frame',
-    size: '23 × 28 in',
-    tags: [TAGS.thrifted],
-    image: curated,
-    details: [],
-    alt: 'A woman in a white shirt and pearls fans herself against navy and white stripes, with a yellow clutch, a perfume bottle, a martini and yellow roses.',
-  },
-  {
-    slug: 'girl-stuff-2',
-    title: 'Girl Stuff #2',
-    medium: 'Oil on thrifted frame',
-    size: '20 × 25 in',
-    tags: [TAGS.thrifted],
-    image: girlStuff2,
-    details: [],
-    alt: 'A woman with pink hair leans on her hand against sage stripes, with a wall clock, teacup, playing cards, an open book and red tulips, in a black frame.',
   },
   // TODO: real titles, sizes and medium for the Women Reading series.
   {
