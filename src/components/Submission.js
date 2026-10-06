@@ -31,7 +31,7 @@ export default function Submission({ application }) {
         </p>
         <h1 className={styles.name}>{site.name}</h1>
         <p className={styles.medium}>{site.medium}</p>
-        {site.about.map((p, i) => (
+        {(application.bio || site.about).map((p, i) => (
           <p key={i} className={styles.bio}>
             {p}
           </p>

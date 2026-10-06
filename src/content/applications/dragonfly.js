@@ -8,6 +8,10 @@ import year1959 from '../paintings/1959/main.jpg';
 export const application = {
   venue: 'Dragonfly Gallery',
   call: 'Small works exhibition',
+  // Bio for this submission only. The main site keeps its own About text.
+  bio: [
+    'I’m Lauren, a Chicagoland-based painter whose figurative work translates feelings like loneliness, boredom and longing into color. Working primarily in oils (and occasionally mixed media), I’ve developed my voice through years of practice alongside workshops, classes and courses—less “self-taught” than constantly taught by community and repetition. For these small works, I left the figures out of the frame and let the objects carry the feeling—what we reach for, what we use as props, and what still doesn’t fill the space.',
+  ],
   works: [
     {
       slug: 'cuppa',
